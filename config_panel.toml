@@ -1,0 +1,12 @@
+version = "1.0"
+
+[main]
+name.en = "Main configuration"
+name.fr = "Configuration principale"
+
+    [main.dummy]
+    name = "Catalogue"
+
+        [main.dummy.catalog]
+        type = "select"
+        choices = ["Default", "ComputableFacts"]
