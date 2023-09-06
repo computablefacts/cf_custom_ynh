@@ -28,9 +28,23 @@ source /usr/share/yunohost/helpers
 # REMOVE SYSTEMD SERVICE 
 #=================================================
 
+# Back to default catalog
 ynh_add_config --template="apps_catalog.Default.yml" --destination="/etc/yunohost/apps_catalog.yml"
 chown root:root "/etc/yunohost/apps_catalog.yml"
 rm -f /var/cache/yunohost/repo/default.json
+
+# Remove Admin theme
+rm /usr/share/yunohost/admin/override.css
+rm /usr/share/yunohost/admin/override.js
+rm /usr/share/yunohost/admin/logo.png
+rm /usr/share/yunohost/admin/index.html
+mv "/usr/share/yunohost/admin/index.html.save" "/usr/share/yunohost/admin/index.html"
+
+# Remove Portal theme
+rm -Rf "/usr/share/ssowat/portal/assets/themes/Add-Apps/"
+rm -Rf "/usr/share/ssowat/portal/assets/themes/ComputableFacts/"
+# TODO: change back to default theme only if current theme in (Add-Apps, ComputableFacts)
+yunohost settings set misc.portal.portal_theme --value default
 
 #=================================================
 # END OF SCRIPT

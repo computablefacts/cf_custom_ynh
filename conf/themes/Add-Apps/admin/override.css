@@ -1,0 +1,68 @@
+body {
+  background-color: #a6d4a4;
+}
+
+button.btn.btn-outline-dark.btn-sm.btn-block {
+  background-color: white;
+}
+
+a.nav-link.text-secondary {
+  color: white !important;
+}
+
+header {
+  border-bottom: 1px solid white;
+}
+
+footer {
+  border-top: 1px solid white;
+}
+
+#yunohost-version {
+  color: white;
+}
+
+a.list-group-item.list-group-item-action {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 0;
+}
+
+.card-header .nav .nav-item a.nav-link {
+  color: white;
+  border-radius: 0;
+}
+
+.card-header .nav .nav-item a.nav-link.active {
+  background-color: white;
+  color: #00264b;
+  border-radius: 0;
+}
+
+.card-header button {
+  border-color: white;
+  color: white;
+}
+
+section {
+  background-color: white;
+}
+
+.form-control, .input-group-text, .list-group-item, .custom-select, .card, .card-header, .btn, .alert, .nav-link.active, section.border {
+  border-radius: 0 !important;
+}
+
+.card-header {
+  background-color: #47627f;
+  color: white;
+}
+
+.card-body {
+  color: #00264b;
+}
+
+.card .category-card > .card-body:hover {
+  background-color: #ff9704;
+  color: white;
+}

@@ -14,6 +14,7 @@
 # IMPORT GENERIC HELPERS
 #=================================================
 
+source _common.sh
 source /usr/share/yunohost/helpers
 
 ynh_abort_if_errors
@@ -39,6 +40,12 @@ set__catalog() {
     rm -f /var/cache/yunohost/repo/default.json
 
     ynh_app_setting_set $app catalog $catalog
+}
+
+set__theme() {
+    change_theme
+
+    ynh_app_setting_set $app theme $theme
 }
 
 #=================================================

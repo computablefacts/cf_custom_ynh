@@ -5,8 +5,15 @@ name.en = "Main configuration"
 name.fr = "Configuration principale"
 
     [main.dummy]
-    name = "Catalogue"
 
         [main.dummy.catalog]
         type = "select"
+        ask.en = "Apps catalog"
+        ask.fr = "Catalogue d'applications"
         choices = ["Default", "ComputableFacts"]
+
+        [main.dummy.theme]
+        type = "select"
+        ask.en = "Theme"
+        ask.fr = "Thème"
+        choices = ["Default", "ComputableFacts", "Add-Apps"]
