@@ -1,68 +1,73 @@
-body {
-  background-color: #a6d4a4;
-}
-
-button.btn.btn-outline-dark.btn-sm.btn-block {
-  background-color: white;
-}
-
-a.nav-link.text-secondary {
-  color: white !important;
+:root {
+  --addapps-blue: #133596;
+  --addapps-pink: #bf2ab8;
+  --addapps-grey: #ebecee;
 }
 
 header {
-  border-bottom: 1px solid white;
+  border: unset !important;
 }
 
 footer {
-  border-top: 1px solid white;
+  border: unset !important;
 }
 
-#yunohost-version {
-  color: white;
+a.text-secondary {
+  color: var(--addapps-blue) !important;
 }
 
-a.list-group-item.list-group-item-action {
-  background-color: transparent;
-  color: white;
-  border: 1px solid white;
-  border-radius: 0;
+a.text-secondary:hover,
+a.text-secondary::before  {
+  color: var(--addapps-pink) !important;
 }
 
-.card-header .nav .nav-item a.nav-link {
-  color: white;
-  border-radius: 0;
+input {
+  border: 1px solid var(--addapps-blue) !important;
+  border-radius: unset !important;
 }
 
-.card-header .nav .nav-item a.nav-link.active {
-  background-color: white;
-  color: #00264b;
-  border-radius: 0;
+a.btn.btn-primary,
+button.btn-success {
+  background: var(--addapps-blue);
+  border: none;
+  border-radius: unset;
 }
 
-.card-header button {
-  border-color: white;
-  color: white;
+a.btn.btn-primary:hover,
+a.btn.btn-primary:active,
+a.btn.btn-primary:focus,
+a.btn.btn-primary:active:focus,
+button.btn-success:hover,
+button.btn-success:active,
+button.btn-success:focus,
+button.btn-success:active:focus {
+  background: var(--addapps-pink);
+  border: none;
+  border-radius: unset;
 }
 
-section {
-  background-color: white;
+.alert {
+  border-radius: unset;
 }
 
-.form-control, .input-group-text, .list-group-item, .custom-select, .card, .card-header, .btn, .alert, .nav-link.active, section.border {
-  border-radius: 0 !important;
+.card {
+  border: 1px solid var(--addapps-blue);
+  border-radius: unset;
+  color: var(--addapps-blue);
 }
 
-.card-header {
-  background-color: #47627f;
-  color: white;
+.card .card-header {
+  border-bottom: 1px solid var(--addapps-blue);
+  border-radius: unset;
+  background: white;
 }
 
-.card-body {
-  color: #00264b;
+.card .card-header.bg-best {
+  background: var(--addapps-blue) !important;
 }
 
-.card .category-card > .card-body:hover {
-  background-color: #ff9704;
-  color: white;
+.card .card-footer {
+  border-top: 1px solid var(--addapps-blue);
+  border-radius: unset;
+  background: white;
 }
