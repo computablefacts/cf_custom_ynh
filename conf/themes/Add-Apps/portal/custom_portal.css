@@ -5,11 +5,158 @@
 ===============================================================================
 */
 
-.ynh-user-portal {
-    background-color: #a6d4a4;
+:root {
+    --addapps-blue: #133596;
+    --addapps-pink: #bf2ab8;
+    --addapps-grey: #ebecee;
 }
 
-/* rules below was already in the default theme */
+/*
+===============================================================================
+== THE LOGIN PAGE
+===============================================================================
+*/
+
+.ynh-user-portal {
+    background-color: white;
+}
+
+.ynh-logo {
+    background-image: url("./logo.png") !important;
+}
+
+.messages.info {
+	color: white;
+    background: var(--addapps-pink);
+}
+
+.login-form .btn {
+    background-color: var(--addapps-blue);
+}
+
+.login-form .btn:hover {
+    background-color: var(--addapps-pink);
+}
+
+.login-form .form-text {
+    border: 1px solid var(--addapps-blue);
+}
+
+.login-form label::before {
+    background: none;
+    color: var(--addapps-blue);
+}
+
+/*
+===============================================================================
+== THE LEFT PART OF THE HEADER
+===============================================================================
+*/
+
+.logged a.user-container {
+    max-width: 400px;
+}
+
+.logged a.user-container,
+.logged a.user-container .user-mail {
+    color: var(--addapps-blue);
+}
+
+.logged a.user-container:hover,
+.logged a.user-container:hover .user-mail,
+.logged a.user-container:hover .user-username::after {
+    color: var(--addapps-pink);
+}
+
+.logged a.user-container::before {
+    color: white;
+    background: var(--addapps-blue);
+}
+
+.logged a.user-container:hover::before {
+    color: white;
+    background: var(--addapps-pink);
+}
+
+.logged a.user-container:hover::after {
+    color: var(--addapps-pink);
+}
+
+/*
+===============================================================================
+== THE RIGHT PART OF THE HEADER
+===============================================================================
+*/
+
+.logged .user-menu a,
+.logged .user-menu a::before {
+    color: var(--addapps-blue);
+}
+
+.logged .user-menu a:hover,
+.logged .user-menu a:hover::before {
+    color: var(--addapps-pink);
+}
+
+/*
+===============================================================================
+== THE FOOTER
+===============================================================================
+*/
+
+.logged .footer nav {
+    border-top: 1px solid var(--addapps-pink);
+}
+
+.logged .footer a {
+    color: var(--addapps-blue);
+}
+
+.logged .footer a:hover {
+    color: var(--addapps-pink);
+}
+
+.logged .footer a::before {
+    color: var(--addapps-pink);
+}
+
+/*
+===============================================================================
+== THE USER PROFILE
+===============================================================================
+*/
+
+.logged .edit label.control-label {
+    background: var(--addapps-blue);
+}
+
+.logged .edit input.form-text {
+    background: white;
+    color: black;
+    border: 1px solid var(--addapps-blue);
+}
+
+.logged .edit input.form-text:disabled {
+    background: var(--addapps-grey);
+    color: black;
+}
+
+.logged .edit input.classic-btn,
+.logged .edit a.validate-btn {
+    background: var(--addapps-blue);
+}
+
+.logged .edit input.classic-btn:hover,
+.logged .edit a.validate-btn:hover {
+    background: var(--addapps-pink);
+}
+
+/*
+===============================================================================
+== THE CARDS COLORS
+===============================================================================
+*/
+
 .bluebg {
     background: #3498DB!important;
 }
