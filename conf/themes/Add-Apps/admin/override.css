@@ -28,22 +28,20 @@ input {
 
 a.btn.btn-primary,
 button.btn-success {
-  background: var(--addapps-blue);
-  border: none;
-  border-radius: unset;
+  background: var(--addapps-blue) !important;
+  border: none !important;
+  border-radius: unset !important;
 }
 
 a.btn.btn-primary:hover,
 a.btn.btn-primary:active,
 a.btn.btn-primary:focus,
-a.btn.btn-primary:active:focus,
 button.btn-success:hover,
 button.btn-success:active,
-button.btn-success:focus,
-button.btn-success:active:focus {
-  background: var(--addapps-pink);
-  border: none;
-  border-radius: unset;
+button.btn-success:focus {
+  background: var(--addapps-pink) !important;
+  border: none !important;
+  border-radius: unset !important;
 }
 
 .alert {
