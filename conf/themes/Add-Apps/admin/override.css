@@ -227,7 +227,7 @@ button.btn-outline-dark:focus {
   color: white;
   background: var(--addapps-pink);
 }
-
+/*
 .animated div:nth-child(2n) .custom-header h2 {
   display: none;
 }
@@ -237,7 +237,7 @@ button.btn-outline-dark:focus {
   color: var(--addapps-blue);
   font-size: 1.35rem;
 }
-
+*/
 #yunohost-version {
   color: var(--addapps-blue);
 }
