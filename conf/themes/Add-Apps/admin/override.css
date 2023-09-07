@@ -12,6 +12,10 @@ footer {
   border: unset !important;
 }
 
+section {
+  color: var(--addapps-blue) !important;
+}
+
 a.text-secondary {
   color: var(--addapps-blue) !important;
 }
@@ -29,6 +33,7 @@ input {
 a.btn.btn-primary,
 a.btn.btn-info,
 a.btn-success,
+button.btn-primary,
 button.btn-info,
 button.btn-success {
   background: var(--addapps-blue) !important;
@@ -47,6 +52,9 @@ a.btn.btn-info:focus,
 a.btn.btn-success:hover,
 a.btn.btn-success:active,
 a.btn.btn-success:focus,
+button.btn-primary:hover,
+button.btn-primary:active,
+button.btn-primary:focus,
 button.btn-info:hover,
 button.btn-info:active,
 button.btn-info:focus,
@@ -143,6 +151,11 @@ button.btn-outline-dark:focus {
   border-radius: unset;
 }
 
+.badge {
+  border-radius: unset;
+  background: var(--addapps-blue);
+}
+
 .card {
   border: 1px solid var(--addapps-blue);
   border-radius: unset;
@@ -163,6 +176,17 @@ button.btn-outline-dark:focus {
   border-top: 1px solid var(--addapps-blue);
   border-radius: unset;
   background: white;
+}
+
+.nav .nav-item .nav-link {
+  border: none;
+  border-radius: unset;
+  color: var(--addapps-blue);
+}
+
+.nav .nav-item .nav-link.active {
+  color: white;
+  background: var(--addapps-blue);
 }
 
 .list-group {
@@ -202,4 +226,27 @@ button.btn-outline-dark:focus {
 .category-card .card-body:hover {
   color: white;
   background: var(--addapps-pink);
+}
+
+.animated div:nth-child(2n) .custom-header h2 {
+  display: none;
+}
+
+.animated div:nth-child(2n) .custom-header::after {
+  content: 'Intégration avec AddApps';
+  color: var(--addapps-blue);
+  font-size: 1.35rem;
+}
+
+#yunohost-version {
+  color: var(--addapps-blue);
+}
+
+#yunohost-version span {
+  display: none;
+}
+
+#yunohost-version::after {
+  color: var(--addapps-blue);
+  content: 'Propulsé avec Towerify!';
 }
