@@ -27,6 +27,9 @@ input {
 }
 
 a.btn.btn-primary,
+a.btn.btn-info,
+a.btn-success,
+button.btn-info,
 button.btn-success {
   background: var(--addapps-blue) !important;
   border: none !important;
@@ -36,12 +39,104 @@ button.btn-success {
 a.btn.btn-primary:hover,
 a.btn.btn-primary:active,
 a.btn.btn-primary:focus,
+a.btn.btn-primary:hover,
+a.btn.btn-primary:active,
+a.btn.btn-info:hover,
+a.btn.btn-info:active,
+a.btn.btn-info:focus,
+a.btn.btn-success:hover,
+a.btn.btn-success:active,
+a.btn.btn-success:focus,
+button.btn-info:hover,
+button.btn-info:active,
+button.btn-info:focus,
 button.btn-success:hover,
 button.btn-success:active,
 button.btn-success:focus {
   background: var(--addapps-pink) !important;
   border: none !important;
   border-radius: unset !important;
+}
+
+button.btn-primary.disabled {
+  background: var(--addapps-grey) !important;
+  border: none !important;
+  border-radius: unset !important;
+  color: var(--addapps-blue) !important;
+}
+
+button.btn-danger {
+  border: none !important;
+  border-radius: unset !important;
+}
+
+button.btn-danger:hover,
+button.btn-danger:active,
+button.btn-danger:focus {
+  border: none !important;
+  border-radius: unset !important;
+}
+
+button.btn-outline-secondary,
+button.btn-outline-success,
+button.btn-outline-dark {
+  border: 1px solid var(--addapps-blue) !important;
+  border-radius: unset !important;
+  color: var(--addapps-blue) !important;
+}
+
+button.btn-outline-secondary:hover,
+button.btn-outline-secondary:active,
+button.btn-outline-secondary:focus,
+button.btn-outline-success:hover,
+button.btn-outline-success:active,
+button.btn-outline-success:focus,
+button.btn-outline-dark:hover,
+button.btn-outline-dark:active,
+button.btn-outline-dark:focus {
+  border: 1px solid var(--addapps-pink) !important;
+  border-radius: unset !important;
+  color: var(--addapps-pink) !important;
+  background: white !important;
+}
+
+.dropdown-menu {
+  border: 1px solid var(--addapps-blue);
+  border-radius: unset;
+  color: var(--addapps-blue);
+}
+
+.dropdown-item {
+  color: var(--addapps-blue);
+}
+
+.dropdown-item:hover,
+.dropdown-item:active,
+.dropdown-item:focus {
+  color: var(--addapps-pink);
+}
+
+.custom-select {
+  border: 1px solid var(--addapps-blue);
+  border-radius: unset;
+}
+
+.yuno-list-group-item-info .yuno-list-group-item-status {
+  background: var(--addapps-blue) !important;
+}
+
+.breadcrumb-item::before {
+  color: var(--addapps-pink) !important;
+}
+
+.breadcrumb-item a {
+  color: var(--addapps-blue) !important;
+}
+
+.breadcrumb-item a:hover,
+.breadcrumb-item a:active,
+.breadcrumb-item a:focus {
+  color: var(--addapps-pink) !important;
 }
 
 .alert {
@@ -68,4 +163,43 @@ button.btn-success:focus {
   border-top: 1px solid var(--addapps-blue);
   border-radius: unset;
   background: white;
+}
+
+.list-group {
+  border-radius: unset;
+}
+
+.list-group-item {
+  border: 1px solid var(--addapps-blue);
+  color: var(--addapps-blue);
+}
+
+.list-group-item:hover {
+  color: var(--addapps-pink);
+}
+
+.list-group-flush .list-group-item {
+  border-inline-start: 1px solid var(--addapps-blue) !important;
+  border-inline-end: 1px solid var(--addapps-blue) !important;
+}
+
+.input-group .input-group-prepend .input-group-text {
+  border: 1px solid var(--addapps-blue);
+  color: var(--addapps-blue);
+  border-radius: unset;
+  background: white;
+}
+
+.border {
+  border: 1px solid var(--addapps-blue) !important;
+}
+
+.rounded {
+  border-radius: unset !important;
+}
+
+.app-card .card-body:hover,
+.category-card .card-body:hover {
+  color: white;
+  background: var(--addapps-pink);
 }
