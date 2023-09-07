@@ -12,3 +12,7 @@
  likely break app's rendering
 ===============================================================================
 */
+
+#ynh-overlay-switch {
+    background-image: url("./logo.png");
+}

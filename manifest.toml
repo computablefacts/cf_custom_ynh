@@ -31,11 +31,11 @@ ram.runtime = "1M"
 [install]
     [install.catalog]
     type = "select"
-    choices = ["Default", "ComputableFacts"]
+    choices = ["Default", "Towerify", "ComputableFacts"]
 
     [install.theme]
     type = "select"
-    choices = ["Default", "ComputableFacts", "Add-Apps"]
+    choices = ["Default", "Towerify", "ComputableFacts", "Add-Apps"]
 
 [resources]
     # See the packaging documentation for the full set
