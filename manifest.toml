@@ -5,7 +5,7 @@ name = "CF customisation"
 description.en = "Install CF customisation"
 description.fr = "Installe les personnalisations CF"
 
-version = "2.1~ynh1"
+version = "2.2~ynh1"
 
 maintainers = ["pbrisacier@mncc.fr"]
 
