@@ -1,11 +1,11 @@
 packaging_format = 2
 
 id = "cf_custom"
-name = "CF customisation"
-description.en = "Install CF customisation"
+name = "CF Customizations"
+description.en = "Install CF Customizations"
 description.fr = "Installe les personnalisations CF"
 
-version = "2.2~ynh1"
+version = "2.3~ynh1"
 
 maintainers = ["pbrisacier@mncc.fr"]
 
