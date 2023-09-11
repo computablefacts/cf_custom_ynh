@@ -238,6 +238,11 @@ button.btn-outline-dark:focus {
   font-size: 1.35rem;
 }
 */
+
+footer nav ul.nav li.nav-item {
+  display: none;
+}
+
 #yunohost-version {
   color: var(--addapps-blue);
 }
