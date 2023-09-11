@@ -120,6 +120,10 @@
     color: var(--addapps-pink);
 }
 
+.logged .footer nav a.link-documentation {
+    display: none;
+}
+
 /*
 ===============================================================================
 == THE USER PROFILE
