@@ -5,7 +5,7 @@ name = "CF Customizations"
 description.en = "Install CF Customizations"
 description.fr = "Installe les personnalisations CF"
 
-version = "2.3~ynh1"
+version = "2.4~ynh1"
 
 maintainers = ["pbrisacier@mncc.fr"]
 
@@ -43,3 +43,8 @@ ram.runtime = "1M"
 
     [resources.permissions]
     # We need to keep this section otherwise the app admin page is not displayed
+
+    [resources.apt]
+    # This will automatically install/uninstall the following apt packages
+    # and implicitly define the $phpversion setting as 8.0 (if phpX.Y-foobar dependencies are listed)
+    packages = ["tmux"]
