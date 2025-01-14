@@ -24,7 +24,7 @@ ynh_print_info --message="Declaring files to be backed up..."
 # BACKUP THE APP MAIN DIR
 #=================================================
 
-ynh_backup --src_path="$install_dir"
+#ynh_backup --src_path="$install_dir"
 
 #=================================================
 # BACKUP THE DATA DIR
@@ -73,6 +73,8 @@ ynh_backup --src_path="$install_dir"
 #ynh_backup --src_path="/etc/cron.d/$app"
 
 #ynh_backup --src_path="/etc/$app/"
+
+ynh_backup --src_path="/etc/yunohost/apps_catalog.yml"
 
 #=================================================
 # BACKUP THE MYSQL DATABASE
